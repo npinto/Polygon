@@ -11,7 +11,8 @@ withNumPy=False
 # if withNumPy is True, set the include path for numpy/arrayobject.h
 # the example is for python on Windows:
 # numPyIncludePath='C:\\Python26\\Lib\\site-packages\\numpy\\core\\include'
-numPyIncludePath=''
+import numpy as np
+numPyIncludePath=np.get_include()
 
 # defaultStyle may be used to set the default style to one of:
 #  * STYLE_TUPLE to get tuples of points
