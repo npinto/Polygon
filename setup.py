@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#       $Id: setup.py 108 2011-03-30 09:06:22Z jraedler $   
+#       $Id: setup.py 108 2011-03-30 09:06:22Z jraedler $
 
 # withNumPy enables some extensions:
 #  * faster adding of contours from NumPy arrays
 #  * data style STYLE_NUMPY to get contours and TriStrips
 #    as NumPy arrays
-withNumPy=False
+withNumPy=True
 
 # if withNumPy is True, set the include path for numpy/arrayobject.h
 # the example is for python on Windows:
@@ -45,12 +45,12 @@ if withNumPy and numPyIncludePath:
 
 longdesc = """THIS VERSION WORKS WITH PYTHON-2.x ONLY!
 
-Polygon is a python package that handles polygonal shapes in 2D. It contains 
-Python bindings for gpc, the excellent General Polygon Clipping Library by 
-Alan Murta and some extensions written in C and pure Python. With Polygon you 
-may handle complex polygonal shapes in Python in a very intuitive way. Polygons 
-are simple Python objects, clipping operations are bound to standard operators 
-like +, -, \|, & and ^. TriStrips can be constructed from Polygons with a 
+Polygon is a python package that handles polygonal shapes in 2D. It contains
+Python bindings for gpc, the excellent General Polygon Clipping Library by
+Alan Murta and some extensions written in C and pure Python. With Polygon you
+may handle complex polygonal shapes in Python in a very intuitive way. Polygons
+are simple Python objects, clipping operations are bound to standard operators
+like +, -, \|, & and ^. TriStrips can be constructed from Polygons with a
 single statement. Functions to compute the area, center point, convex hull,
 point containment and much more are included. This package was already used to
 process shapes with more than one million points!
@@ -60,10 +60,10 @@ The gpc homepage is located at http://www.cs.man.ac.uk/~toby/alan/software/ .
 The wrapping and extension code is free software, but the core gpc library is
 free for non-commercial usage only. The author says:
 
-    GPC is free for non-commercial use only. We invite non-commercial users 
+    GPC is free for non-commercial use only. We invite non-commercial users
     to make a voluntary donation towards the upkeep of GPC.
-    
-    If you wish to use GPC in support of a commercial product, you must obtain 
+
+    If you wish to use GPC in support of a commercial product, you must obtain
     an official GPC Commercial Use Licence from The University of Manchester.
 
 Please respect this statement and contact the author (see gpc homepage) if you
@@ -71,7 +71,7 @@ wish to use this software in commercial projects!
 """
 
 
-args = { 
+args = {
     'name'            : "Polygon",
     'version'         : "2.0.4",
     'description'     : "Polygon is a python package that handles polygonal shapes in 2D",
@@ -85,18 +85,18 @@ args = {
     'download_url'    : "http://polygon.origo.ethz.ch/download",
     'classifiers'     : ['Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'Intended Audience :: Science/Research', 
-        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)', 
-        'License :: Other/Proprietary License', 
-        'Programming Language :: C', 
-        'Programming Language :: Python :: 2', 
-        'Programming Language :: Python :: 2.5', 
-        'Programming Language :: Python :: 2.6', 
-        'Programming Language :: Python :: 2.7', 
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
+        'License :: Other/Proprietary License',
+        'Programming Language :: C',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
         'Operating System :: POSIX :: Linux',
-        'Operating System :: Microsoft :: Windows', 
+        'Operating System :: Microsoft :: Windows',
         'Operating System :: MacOS :: MacOS X',
-        'Topic :: Scientific/Engineering :: Mathematics', 
+        'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Visualization'
     ],
     'packages'        : ['Polygon'],
