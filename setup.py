@@ -19,7 +19,7 @@ numPyIncludePath=np.get_include()
 #  * STYLE_LIST to get lists of points
 #  * STYLE_NUMPY to get points as NumPy array
 #    withNumPy must be enabled for this!
-defaultStyle='STYLE_LIST'
+defaultStyle='STYLE_NUMPY'
 
 # ------ no changes below! If you need to change, it's a bug! -------
 from distutils.core import setup, Extension
